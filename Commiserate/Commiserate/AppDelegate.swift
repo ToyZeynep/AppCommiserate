@@ -18,18 +18,3 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     return true
   }
 }
-
-@main
-struct Commiserate: App {
-  // register app delegate for Firebase setup
-  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-
-  var body: some Scene {
-    WindowGroup {
-      NavigationView {
-        ContentView()
-      }
-    }
-  }
-}
