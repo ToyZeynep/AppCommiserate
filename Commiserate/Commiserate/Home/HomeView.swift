@@ -9,19 +9,33 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var homeViewModel: HomeViewModel = HomeViewModel()
+    @State var isMessagesActive = false
+    @State var selectedUser: User
+    
     var body: some View {
-      
+        NavigationView {
             VStack {
-                let users = homeViewModel.users
-                if !users.isEmpty {
-                    ForEach(users, id: \.self) { user in
-                        Text(user.email ?? "boş geldi")
+                if !homeViewModel.users.isEmpty {
+                    ForEach(homeViewModel.users, id: \.id) { user in
+                        Text(user.email ?? "Boş geldi")
+                            .onTapGesture {
+                                selectedUser = user
+                                isMessagesActive = true
+                            }
                     }
                 }
             }
+            .navigationTitle("Home")
+            .background(
+                NavigationLink(destination: SendMessageView(user: selectedUser), isActive: $isMessagesActive) {
+                    EmptyView()
+                }
+            )
+        }
     }
 }
 
+
 #Preview {
-    HomeView()
+    HomeView(selectedUser: User(name: "", email: "", profileImageURL: "", id: ""))
 }

@@ -20,6 +20,7 @@ final class HomeViewModel: ObservableObject {
         Database.database().reference().child("users").observe(.childAdded) { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject] {
               var user = User()
+                user.id = snapshot.key
                 user.name = dictionary["name"] as? String
                 user.email = dictionary["email"] as? String
                 self.users.append(user)

@@ -9,4 +9,6 @@ import Foundation
 struct User: Hashable {
     var name: String?
     var email: String?
+    var profileImageURL: String?
+    var id: String?
 }
