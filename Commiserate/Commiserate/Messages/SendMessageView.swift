@@ -15,7 +15,7 @@ struct SendMessageView: View {
     var body: some View {
         Button{
             let uid = Auth.auth().currentUser?.uid ?? ""
-            messagesViewModel.sendMessages(userId: user.id ?? "", fromId: uid)
+            messagesViewModel.sendMessages(userId: user.id ?? "")
         } label: {
             Text(user.name ?? "olmadı")
         }

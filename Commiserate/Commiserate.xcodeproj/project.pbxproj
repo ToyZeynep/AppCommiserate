@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D404A682BB4D4BF00A50FE6 /* ImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D404A672BB4D4BF00A50FE6 /* ImageFromURL.swift */; };
+		8D404A6B2BB4D52F00A50FE6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8D404A6A2BB4D52F00A50FE6 /* Kingfisher */; };
 		8D4FE0A72BAE12BD008A1C75 /* CommiserateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FE0A62BAE12BD008A1C75 /* CommiserateApp.swift */; };
 		8D4FE0A92BAE12BD008A1C75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FE0A82BAE12BD008A1C75 /* ContentView.swift */; };
 		8D4FE0AB2BAE12C0008A1C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FE0AA2BAE12C0008A1C75 /* Assets.xcassets */; };
@@ -60,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D404A672BB4D4BF00A50FE6 /* ImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromURL.swift; sourceTree = "<group>"; };
 		8D4FE0A32BAE12BD008A1C75 /* Commiserate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commiserate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4FE0A62BAE12BD008A1C75 /* CommiserateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommiserateApp.swift; sourceTree = "<group>"; };
 		8D4FE0A82BAE12BD008A1C75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		8D7E7E0F2BAF1AF900109FED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8D7E7E112BAF1B0800109FED /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8D7E7E132BAF1E2100109FED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D9429752BB4CB4100207C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DBDB71A2BAF8A29003FD922 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
 		8DBDB71C2BAF8A3B003FD922 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		8DBDB71E2BAFA1ED003FD922 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				8D7E7DE82BAE368D00109FED /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				8D7E7DEC2BAE368D00109FED /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				8D7E7E042BAE467600109FED /* FirebaseDatabase in Frameworks */,
+				8D404A6B2BB4D52F00A50FE6 /* Kingfisher in Frameworks */,
 				8D7E7DF02BAE36AB00109FED /* FirebaseFirestore in Frameworks */,
 				8D7E7E022BAE428400109FED /* FirebaseAuthCombine-Community in Frameworks */,
 			);
@@ -151,6 +156,7 @@
 				8D7E7E0E2BAF1AEA00109FED /* Home */,
 				8D7E7E052BAF137E00109FED /* Login */,
 				8D7E7DF82BAE3A4E00109FED /* Register */,
+				8D9429752BB4CB4100207C37 /* Info.plist */,
 				8D4FE0D02BAE34E4008A1C75 /* GoogleService-Info.plist */,
 				8D4FE0A62BAE12BD008A1C75 /* CommiserateApp.swift */,
 				8D4FE0A82BAE12BD008A1C75 /* ContentView.swift */,
@@ -159,6 +165,7 @@
 				8D4FE0D32BAE35AA008A1C75 /* AppDelegate.swift */,
 				8D7E7DFD2BAE3BC200109FED /* CustomTextField.swift */,
 				8D7E7DFF2BAE3F9300109FED /* ButtonStyle.swift */,
+				8D404A672BB4D4BF00A50FE6 /* ImageFromURL.swift */,
 			);
 			path = Commiserate;
 			sourceTree = "<group>";
@@ -262,6 +269,7 @@
 				8D7E7E012BAE428400109FED /* FirebaseAuthCombine-Community */,
 				8D7E7E032BAE467600109FED /* FirebaseDatabase */,
 				8DBDB7172BAF89FE003FD922 /* FirebaseStorage */,
+				8D404A6A2BB4D52F00A50FE6 /* Kingfisher */,
 			);
 			productName = Commiserate;
 			productReference = 8D4FE0A32BAE12BD008A1C75 /* Commiserate.app */;
@@ -337,6 +345,7 @@
 			mainGroup = 8D4FE09A2BAE12BD008A1C75;
 			packageReferences = (
 				8D4FE0D22BAE358B008A1C75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8D404A692BB4D52F00A50FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8D4FE0A42BAE12BD008A1C75 /* Products */;
 			projectDirPath = "";
@@ -388,6 +397,7 @@
 				8DBDB71D2BAF8A3B003FD922 /* MessagesView.swift in Sources */,
 				8DBDB7232BB024BB003FD922 /* MessageView.swift in Sources */,
 				8D7E7E102BAF1AF900109FED /* HomeView.swift in Sources */,
+				8D404A682BB4D4BF00A50FE6 /* ImageFromURL.swift in Sources */,
 				8D7E7E0D2BAF14B600109FED /* LoginView.swift in Sources */,
 				8D7E7DFA2BAE3A5B00109FED /* RegisterView.swift in Sources */,
 				8D7E7E0B2BAF14AB00109FED /* LoginViewModel.swift in Sources */,
@@ -729,6 +739,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8D404A692BB4D52F00A50FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 		8D4FE0D22BAE358B008A1C75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -740,6 +758,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8D404A6A2BB4D52F00A50FE6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D404A692BB4D52F00A50FE6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		8D7E7DE52BAE368D00109FED /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D4FE0D22BAE358B008A1C75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
